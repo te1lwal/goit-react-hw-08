@@ -1,0 +1,12 @@
+.no_contacts_yet {
+  text-align: center;
+  font-weight: 700;
+}
+
+.contact_page_container {
+  position: relative;
+}
+
+.contact_title {
+  margin-bottom: 20px;
+}

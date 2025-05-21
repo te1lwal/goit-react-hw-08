@@ -1,0 +1,32 @@
+.contacts_wrapper {
+  margin: 0 auto;
+  width: 200px;
+  display: flex;
+  justify-content: start;
+}
+
+.contacts_list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+@media screen and (min-width: 515px) {
+  .contacts_wrapper {
+    width: 100%;
+  }
+
+  .contacts_list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 15px;
+    max-width: 630px;
+    justify-content: flex-start;
+  }
+}
+
+.warning {
+  text-align: center;
+  font-weight: bold;
+}
