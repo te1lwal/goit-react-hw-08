@@ -1,5 +1,13 @@
 :root {
-  font-family: Lora, Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  --primary-color: #b191f9;
+  --secondary-color: #e4d4ff;
+  --accent-color: #d9afff;
+  --background-color: #f9f4ff;
+  --text-color: #4b007d;
+  --button-color: #c69af6;
+  --button-hover: #aa6cf0;
+
+  font-family: "Lora", "Inter", system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 }
@@ -9,10 +17,9 @@ html {
 }
 
 body {
-  color: #161a1d;
-  background: #f5f3f4;
+  color: var(--text-color);
+  background: var(--background-color);
   min-width: 320px;
-
   min-height: 100vh;
   margin: 0 auto;
   padding: 0;
@@ -24,11 +31,12 @@ body {
   min-height: 80vh;
   max-width: 670px;
   min-width: 512px;
-  border-radius: 12px;
+  border-radius: 16px;
   margin: 20px auto;
   overflow: hidden;
   padding: 20px;
   background-color: #ffffff;
+  box-shadow: 0 4px 16px rgba(180, 144, 255, 0.2);
   position: relative;
 }
 
@@ -38,6 +46,7 @@ main {
 
 h1 {
   text-align: center;
+  color: var(--primary-color);
 }
 
 h1,
@@ -61,12 +70,22 @@ ul {
 }
 
 a {
-  color: currentColor;
+  color: var(--accent-color);
   text-decoration: none;
 }
 
 button {
   cursor: pointer;
+  border: none;
+  padding: 10px 20px;
+  background-color: var(--button-color);
+  color: #fff;
+  border-radius: 12px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: var(--button-hover);
 }
 
 img {
@@ -87,4 +106,5 @@ address {
 .text {
   text-align: center;
   font-weight: bold;
+  color: var(--primary-color);
 }
